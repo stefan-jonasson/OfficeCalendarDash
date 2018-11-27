@@ -1,6 +1,7 @@
 <template>
   <section class="container">
     <div class="left">
+      <calendarOverview/>
       <logo/>
     </div>
     <div class="right">
@@ -12,10 +13,12 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import DayQuote from '~/components/DayQuote.vue'
+import CalendarOverview from '~/components/CalendarOverview.vue'
 
 export default {
   components: {
     DayQuote,
+    CalendarOverview,
     Logo
   }
 }
@@ -25,6 +28,7 @@ export default {
 .container {
   @apply min-h-screen flex justify-center text-center mx-auto;
 }
+
 .container {
   border: 5px solid blue;
 }
